@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import Dashboard from './components/Dashboard';
+
 import { MyContext } from '../context/myContext';
+import AppRoutes from './appRoutes';
 
 const App = () => {
     const [image,setImage]=useState()
@@ -9,9 +10,7 @@ const App = () => {
             image,setImage
         }}>
         <div>
-            <h2 className='app-title'>העלאת תמונות!!!</h2>
-            <hr />
-            <Dashboard />
+            <AppRoutes/>
         </div>
         </MyContext.Provider>
      );
